@@ -1,0 +1,50 @@
+.weatherWidget {
+  border-top-color: #4a90e2; /* A blue color for weather */
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.currentWeather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 4rem;
+}
+
+.temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.condition {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.forecastDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecastIcon {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}

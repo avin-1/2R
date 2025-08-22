@@ -2,21 +2,41 @@
   padding: 2rem;
 }
 
-.summary {
+.welcomeMessage {
+  margin-bottom: 2rem;
+}
+
+.topRow {
   display: flex;
-  justify-content: space-around;
+  gap: 2rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
-.mainContent {
+.summary {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.widgets {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.middleRow {
+  margin-bottom: 2rem;
+}
+
+.bottomRow {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
 .farmList {
-  flex: 1;
+  flex: 2; /* Takes more space */
   min-width: 300px;
 }
 
