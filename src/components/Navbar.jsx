@@ -7,13 +7,13 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link to="/" className={styles.logo}>
-        <span role="img" aria-label="leaf">🌿</span> MRV Platform
+        <span role="img" aria-label="leaf">🌿</span> Farm Carbon
       </Link>
       <ul className={styles.navList}>
         <li><NavLink to="/" className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}><FaHome /> Home</NavLink></li>
         <li><NavLink to="/dashboard" className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}><FaTachometerAlt /> Dashboard</NavLink></li>
-        <li><NavLink to="/register-farm" className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}><FaPlusCircle /> Register Farm</NavLink></li>
-        <li><NavLink to="/log-activity" className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}><FaBook /> Log Activity</NavLink></li>
+        <li><NavLink to="/register-farm" className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}><FaPlusCircle /> Add Farm</NavLink></li>
+        <li><NavLink to="/log-activity" className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}><FaBook /> Add Activity</NavLink></li>
         <li><NavLink to="/reports" className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}><FaFileAlt /> Reports</NavLink></li>
         <li><NavLink to="/community-forum" className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}><FaComments /> Forum</NavLink></li>
         <li><NavLink to="/expert-advice" className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}><FaUserMd /> Expert Advice</NavLink></li>

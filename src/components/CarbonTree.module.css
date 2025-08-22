@@ -1,0 +1,30 @@
+.carbonTree {
+  text-align: center;
+  border-top-color: #2a9d8f; /* A green for the tree */
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.treeVisual {
+  font-size: 6rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carbonTree:hover .treeVisual {
+  transform: scale(1.1);
+}
+
+.credits {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.message {
+  color: #555;
+}

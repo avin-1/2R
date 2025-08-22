@@ -4,6 +4,8 @@
 
 .welcomeMessage {
   margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .topRow {
@@ -11,6 +13,7 @@
   gap: 2rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  align-items: stretch; /* Make items in the row same height */
 }
 
 .summary {
@@ -36,12 +39,11 @@
 }
 
 .farmList {
-  flex: 2; /* Takes more space */
+  flex: 1;
   min-width: 300px;
 }
 
-.mapContainer {
+.chartContainer {
   flex: 1;
   min-width: 300px;
-  height: 400px;
 }
