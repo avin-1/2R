@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
+import FeatureCard from '../components/FeatureCard';
+import { FaSatellite, FaCalculator, FaMobileAlt } from 'react-icons/fa';
 
 const HomePage = () => {
   return (
@@ -15,21 +17,28 @@ const HomePage = () => {
         </Link>
       </header>
 
-      <section>
-        <h2>How We Help You</h2>
+      <section className={styles.featuresSection}>
+        <h2 className={styles.sectionTitle}>
+          <span role="img" aria-label="leaf" style={{ marginRight: '1rem' }}>🌿</span>
+          How We Help You
+          <span role="img" aria-label="leaf" style={{ marginLeft: '1rem' }}>🌿</span>
+        </h2>
         <div className={styles.features}>
-          <div className={styles.feature}>
-            <h3>Satellite Monitoring</h3>
-            <p>We use satellite images to watch your farm's health and growth, without you having to do anything extra.</p>
-          </div>
-          <div className={styles.feature}>
-            <h3>Automatic Calculations</h3>
-            <p>Our smart system automatically calculates the carbon credits you earn from your farming practices.</p>
-          </div>
-          <div className={styles.feature}>
-            <h3>Simple Mobile App</h3>
-            <p>Use our easy app to log your farm activities and see your progress anytime, anywhere.</p>
-          </div>
+          <FeatureCard
+            icon={<FaSatellite />}
+            title="Satellite Monitoring"
+            text="We use satellite images to watch your farm's health and growth, without you having to do anything extra."
+          />
+          <FeatureCard
+            icon={<FaCalculator />}
+            title="Automatic Calculations"
+            text="Our smart system automatically calculates the carbon credits you earn from your farming practices."
+          />
+          <FeatureCard
+            icon={<FaMobileAlt />}
+            title="Simple Mobile App"
+            text="Use our easy app to log your farm activities and see your progress anytime, anywhere."
+          />
         </div>
       </section>
     </div>
