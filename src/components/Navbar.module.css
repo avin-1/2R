@@ -1,16 +1,24 @@
 .navbar {
-  background-color: #fff;
+  background-color: var(--card-bg-color);
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo span {
+  font-size: 2rem;
 }
 
 .navList {
@@ -25,9 +33,20 @@
   color: var(--text-color);
   font-weight: 500;
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-bottom-color 0.3s;
 }
 
 .navLink:hover {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
 }
