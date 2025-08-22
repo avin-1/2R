@@ -16,7 +16,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
+        <Route index element={<DashboardPage />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="register" element={<RegisterPage />} />
         <Route path="dashboard" element={<DashboardPage />} />
@@ -25,8 +25,8 @@ function App() {
         <Route path="reports" element={<ReportsPage />} />
         <Route path="community-forum" element={<CommunityForumPage />} />
         <Route path="expert-advice" element={<ExpertAdvicePage />} />
-        {/* A simple catch-all redirect to the home page */}
-        <Route path="*" element={<HomePage />} />
+        {/* A simple catch-all redirect to the dashboard */}
+        <Route path="*" element={<DashboardPage />} />
       </Route>
     </Routes>
   );
