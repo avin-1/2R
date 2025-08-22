@@ -1,32 +1,42 @@
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --background-color: #f4f7f6;
-  --text-color: #333;
-  --header-font: 'Helvetica Neue', sans-serif;
-  --body-font: 'Georgia', serif;
+  /* A nature-inspired, farmer-friendly color palette */
+  --primary-color: #2A9D8F; /* Jungle Green */
+  --secondary-color: #E9C46A; /* Saffron */
+  --accent-color: #F4A261; /* Sandy Brown */
+  --background-color: #FEFBF6; /* A warm, off-white */
+  --text-color: #264653; /* Charcoal */
+  --card-bg-color: #FFFFFF;
+  --border-color: #ddd;
+
+  /* Using a modern, friendly, and highly readable font stack */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family: var(--body-font);
   margin: 0;
   background-color: var(--background-color);
   color: var(--text-color);
-  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--header-font);
+  color: var(--text-color);
   font-weight: 700;
 }
 
 a {
   color: var(--primary-color);
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #E76F51; /* A contrasting color for hover states */
 }
 
 main {
@@ -34,7 +44,7 @@ main {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
