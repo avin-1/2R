@@ -2,14 +2,37 @@
   padding: 2rem;
 }
 
-.summary {
+.welcomeMessage {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.topRow {
   display: flex;
-  justify-content: space-around;
+  gap: 2rem;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
+  align-items: stretch; /* Make items in the row same height */
+}
+
+.summary {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.widgets {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.middleRow {
   margin-bottom: 2rem;
 }
 
-.mainContent {
+.bottomRow {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
@@ -20,8 +43,7 @@
   min-width: 300px;
 }
 
-.mapContainer {
+.chartContainer {
   flex: 1;
   min-width: 300px;
-  height: 400px;
 }

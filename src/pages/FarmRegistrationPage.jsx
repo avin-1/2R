@@ -20,12 +20,15 @@ const FarmRegistrationPage = () => {
       return;
     }
     console.log({ farmName, farmType, area, location: { lat: location.lat, lng: location.lng } });
-    alert('Farm registered successfully! (Check console for data)');
+    alert('Farm added successfully! (Check console for data)');
   };
 
   return (
     <div className={styles.page}>
-      <h1>Register a New Farm</h1>
+      <h1>
+        <span role="img" aria-label="leaf" style={{ marginRight: '0.5rem' }}>🌿</span>
+        Add a New Farm
+      </h1>
       <div className={styles.content}>
         <div className={styles.formContainer}>
           <form onSubmit={handleSubmit} className={formStyles.form}>
@@ -34,7 +37,7 @@ const FarmRegistrationPage = () => {
               <input type="text" id="farmName" value={farmName} onChange={(e) => setFarmName(e.target.value)} required />
             </div>
             <div className={formStyles.formGroup}>
-              <label htmlFor="farmType">Farm Type</label>
+              <label htmlFor="farmType">Type of Farm</label>
               <select id="farmType" value={farmType} onChange={(e) => setFarmType(e.target.value)}>
                 <option>Rice Paddy</option>
                 <option>Agroforestry</option>
@@ -44,13 +47,13 @@ const FarmRegistrationPage = () => {
               <label htmlFor="area">Area (in acres)</label>
               <input type="number" id="area" value={area} onChange={(e) => setArea(e.target.value)} required />
             </div>
-            <button type="submit" className={formStyles.button}>Register Farm</button>
+            <button type="submit" className={formStyles.button}>Add Farm</button>
           </form>
         </div>
         <div className={styles.mapContainer}>
-          <h3>Select Farm Location</h3>
+          <h3>Select Farm Location on Map</h3>
           <MapWithMarker onLocationSelect={handleLocationSelect} />
-          {location && <p>Selected Location: Lat: {location.lat.toFixed(4)}, Lng: {location.lng.toFixed(4)}</p>}
+          {location && <p>Your selected location: Lat: {location.lat.toFixed(4)}, Lng: {location.lng.toFixed(4)}</p>}
         </div>
       </div>
     </div>

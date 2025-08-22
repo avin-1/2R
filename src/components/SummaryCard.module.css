@@ -1,19 +1,30 @@
 .summaryCard {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   flex: 1;
   min-width: 200px;
 }
 
+.icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.text {
+  text-align: left;
+}
+
 .title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #555;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.25rem 0;
 }
 
 .value {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin: 0;
 }
 

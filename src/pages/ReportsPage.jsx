@@ -10,7 +10,10 @@ const mockReports = [
 const ReportsPage = () => {
   return (
     <div className={styles.page}>
-      <h1>Reports</h1>
+      <h1>
+        <span role="img" aria-label="leaf" style={{ marginRight: '0.5rem' }}>🌿</span>
+        Reports
+      </h1>
       <p>Here you can view and download your generated carbon credit reports.</p>
       <div className={styles.reportList}>
         {mockReports.map(report => (

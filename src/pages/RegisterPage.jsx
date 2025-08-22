@@ -4,7 +4,10 @@ import formStyles from '../components/Form.module.css';
 const RegisterPage = () => {
   return (
     <div className={formStyles.formContainer}>
-      <h1 style={{ textAlign: 'center' }}>Register</h1>
+      <h1 style={{ textAlign: 'center' }}>
+        <span role="img" aria-label="leaf" style={{ marginRight: '0.5rem' }}>🌿</span>
+        Register
+      </h1>
       <form className={formStyles.form}>
         <div className={formStyles.formGroup}>
           <label htmlFor="name">Name</label>

@@ -1,35 +1,44 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
+import FeatureCard from '../components/FeatureCard';
+import { FaSatellite, FaCalculator, FaMobileAlt } from 'react-icons/fa';
 
 const HomePage = () => {
   return (
     <div className={styles.homePage}>
       <header className={styles.header}>
-        <h1>Scalable MRV Solutions for Agroforestry and Rice-Based Carbon Projects</h1>
+        <h1>Easily Track Your Farm's Carbon Credits</h1>
         <p>
-          A unified platform that automates carbon monitoring and credit calculations for agroforestry and rice farming, with minimal ground intervention.
+          Our platform helps you measure the carbon captured by your farm, so you can earn more from your hard work.
         </p>
         <Link to="/register" className={styles.ctaButton}>
-          Get Started
+          Join Now
         </Link>
       </header>
 
-      <section>
-        <h2>Key Features</h2>
+      <section className={styles.featuresSection}>
+        <h2 className={styles.sectionTitle}>
+          <span role="img" aria-label="leaf" style={{ marginRight: '1rem' }}>🌿</span>
+          How We Help You
+          <span role="img" aria-label="leaf" style={{ marginLeft: '1rem' }}>🌿</span>
+        </h2>
         <div className={styles.features}>
-          <div className={styles.feature}>
-            <h3>Remote Sensing & Satellite Data</h3>
-            <p>Utilize open satellite APIs to continuously monitor farms at scale, tracking tree cover, biomass growth, and flooding cycles.</p>
-          </div>
-          <div className={styles.feature}>
-            <h3>AI & Machine Learning Analytics</h3>
-            <p>Translate raw data into actionable carbon metrics, estimating biomass, carbon stock, and methane emissions.</p>
-          </div>
-          <div className={styles.feature}>
-            <h3>Farmer-Friendly Mobile/Web App</h3>
-            <p>A lightweight, offline-first application for farmers to register fields, log activities, and receive personalized feedback.</p>
-          </div>
+          <FeatureCard
+            icon={<FaSatellite />}
+            title="Satellite Monitoring"
+            text="We use satellite images to watch your farm's health and growth, without you having to do anything extra."
+          />
+          <FeatureCard
+            icon={<FaCalculator />}
+            title="Automatic Calculations"
+            text="Our smart system automatically calculates the carbon credits you earn from your farming practices."
+          />
+          <FeatureCard
+            icon={<FaMobileAlt />}
+            title="Simple Mobile App"
+            text="Use our easy app to log your farm activities and see your progress anytime, anywhere."
+          />
         </div>
       </section>
     </div>
