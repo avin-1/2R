@@ -1,0 +1,17 @@
+.farmList {
+  list-style: none;
+  padding: 0;
+}
+
+.farmListItem {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.farmListItem h3 {
+  margin-top: 0;
+}
