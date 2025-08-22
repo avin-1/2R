@@ -1,14 +1,20 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
+import Header from './Header';
+import BottomNav from './BottomNav';
 
-const Layout = () => {
+const Layout = ({ onLogout }) => {
+  const mainStyle = {
+    paddingBottom: '80px', // Add padding to the bottom to avoid overlap with the nav bar
+  };
+
   return (
     <div>
-      <Navbar />
-      <main>
+      <Header onLogout={onLogout} />
+      <main style={mainStyle}>
         <Outlet />
       </main>
+      <BottomNav />
     </div>
   );
 };
