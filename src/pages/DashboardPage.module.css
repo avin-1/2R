@@ -1,0 +1,27 @@
+.dashboard {
+  padding: 2rem;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.mainContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.farmList {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mapContainer {
+  flex: 1;
+  min-width: 300px;
+  height: 400px;
+}
