@@ -1,0 +1,28 @@
+.topicList {
+  margin-bottom: 2rem;
+}
+
+.topicItem {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.topicItem h3 {
+  margin-top: 0;
+}
+
+.post {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.postMeta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}

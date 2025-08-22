@@ -8,6 +8,8 @@ import DashboardPage from './pages/DashboardPage';
 import FarmRegistrationPage from './pages/FarmRegistrationPage';
 import ActivityLogPage from './pages/ActivityLogPage';
 import ReportsPage from './pages/ReportsPage';
+import ForumPage from './pages/ForumPage';
+import TopicPage from './pages/TopicPage';
 import './App.css';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="register-farm" element={<FarmRegistrationPage />} />
         <Route path="log-activity" element={<ActivityLogPage />} />
         <Route path="reports" element={<ReportsPage />} />
+        <Route path="forum" element={<ForumPage />} />
+        <Route path="forum/:topicId" element={<TopicPage />} />
       </Route>
     </Routes>
   );
